@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+
+	<AssemblyName>texges</AssemblyName>
+	<OutputPath>$(BaseOutputPath)</OutputPath>
+    <RootNamespace>Texges.TextManipulation</RootNamespace>
+    <Authors>@ejjonatah</Authors>
+    <DebugType>none</DebugType>
+	<NoWarn>$(NoWarn);IDE0130</NoWarn>
+
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Imports-Netxs.cs" Link="Required-Items\Imports-Netxs.cs" />
+	  
+  </ItemGroup>
+	
+</Project>
