@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+
+	<GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+	<AssemblyName>texges</AssemblyName>
+	<OutputPath>$(BaseOutputPath)</OutputPath>
+    <RootNamespace>Texges.TextManipulation</RootNamespace>
+    <Authors>@ejjonatah</Authors>
+    <DebugType>none</DebugType>
+	<NoWarn>$(NoWarn);IDE0130</NoWarn>
+
+  </PropertyGroup>
+  <ItemGroup>
+	  <Compile Include="..\headers\*.cs" Exclude="..\headers\*.h.cs" LinkBase="Abstractions" />
+	  <Compile Include="..\headers\StaticContent_for\**\*.cs" LinkBase="StaticContent" />
+	  <Compile Include="..\Imports-Netxs.cs" Link="Required-Items\Imports-Netxs.cs" />
+	  <Compile Include=".internals\LazyFormattableString.cs" />
+	  <Compile Include=".internals\managers\ValueStringBuilder.cs" />
+  </ItemGroup>
+	
+</Project>
