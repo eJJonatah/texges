@@ -1,4 +1,5 @@
-﻿
+﻿#pragma warning disable IDE0251 // este é um aquivo header, nao possui implementacao
+
 using System.Buffers;
 namespace Texges.TextManipulation.Managers;
 using Abstraction;
