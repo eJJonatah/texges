@@ -1,0 +1,21 @@
+* text=auto
+
+*.cs     diff=csharp
+
+*.sln       merge=binary
+*.csproj    merge=binary
+*.jsproj    merge=binary
+*.sqlproj   merge=binary
+
+*.jpg   binary
+*.png   binary
+*.gif   binary
+
+*.doc   diff=astextplain
+*.DOC   diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain
+*.xlsx  diff=binary merge=binary
+*.xlsb  diff=binary merge=binary
