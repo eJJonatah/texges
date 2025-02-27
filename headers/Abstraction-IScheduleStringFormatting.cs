@@ -16,7 +16,7 @@ namespace Texges.TextManipulation.Abstraction;
 // definitiva de memoria. Essas rotinas de preparacao se baseam fortemente em alugel de memoria das piscinas do sistema, a responsabilidade
 // de descarte/devolucao dos valores alugados é propagada à string final que implementa o fluxo ".Dispose()"
 //
-interface IScheduleStringFormatting : IChangeTextStructure // apesar de combinar essas funcionalidades todas as operacoes de alteracao sao postergadas para a 'LazyFormattableString'
+public interface IScheduleStringFormatting : IChangeTextStructure // apesar de combinar essas funcionalidades todas as operacoes de alteracao sao postergadas para a 'LazyFormattableString'
 {
     // define o conteudo substituivel por valores padrao, geralmente sera um caractere, como '§' ou uma string pequena como "<value>"
     //
